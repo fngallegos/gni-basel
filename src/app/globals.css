@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #010101;
+  --foreground: #f2f2f2;
+  --muted: #888;
+  --card: #0c0c0c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Neue Haas Grotesk Display", "Helvetica Neue", "Inter",
+    "Segoe UI", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "GT Pressura Mono", "SFMono-Regular", Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at top, #111 0%, #050505 55%, #000 100%);
+  color: var(--foreground);
+  letter-spacing: 0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
